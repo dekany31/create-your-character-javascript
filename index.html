@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create character</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js"></script>
+</head>
+
+<body>
+  <div class="main">
+    <div id="character_form">
+      <form>
+        <div class="select_form">
+          <label id="select_form" for="name">Name</label>
+          <input placeholder="name" type="text" name="name" id="name">
+        </div>
+        <div class="select_form">
+          <label for="sex">Sex</label>
+          <select id="sex" name="sex">
+            <option value="none">---</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <div class="select_form">
+          <label for="race">Race</label>
+          <select id="race" name="race">
+            <option value="none">---</option>
+            <option value="human">Human</option>
+            <option value="dwarf">Dwarf</option>
+            <option value="elf">Elf</option>
+          </select>
+        </div>
+        <div class="select_form">
+          <label for="class">Class</label>
+          <select id="class" name="class">
+            <option value="none">---</option>
+            <option value="warrior">Warrior</option>
+            <option value="ranger">Ranger</option>
+            <option value="wizard">Wizard</option>
+          </select>
+        </div>
+      </form>
+    </div>
+    <div id="character_sheet">
+      <div class="character_name">
+        <h3 id="character_name">Your name</h3>
+      </div>
+      <div class="character_image">
+        <div class="race_image">
+          <img id="img_race" src="" alt="Race">
+        </div>
+        <div class="class_image">
+          <img id="img_class" src="" alt="Class">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

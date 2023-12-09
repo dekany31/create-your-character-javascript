@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Montserrat', Times, serif;
+  font-size: 2.5vh;
+  font-weight: 200;
+  color: darkblue;
+  background-color: #bcb9b9;
+  margin: 0 10vh 20vh 10vh;
+  border: none; 
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+div[id] {
+  height: 50vh;
+  width: 40vw;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em;
+  height: 50vh;
+  border-radius: 50px;
+  background: #f8f6f6;
+  box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+
+  input, label, select {
+    font-family:'Montserrat', Times, serif;
+    font-size: 2.5vh;
+    font-weight: 200;
+    color: darkblue;
+     margin: 0 1vh 1vh 1vh;
+     border: none; 
+  }
+  input, select {
+    text-align: center;
+    font-weight: 600;
+    border-radius: 50px;
+    background: #dddada;
+    box-shadow: inset 8px 8px 16px #bcb9b9,
+                inset -8px -8px 16px #fefbfb;
+  }
+  label {
+    width: 4em;
+    border-radius: 44px;
+    background: linear-gradient(145deg, #eeeded, #dad7d7);
+    box-shadow:  5px 5px 9px #aaa8a8,
+                -5px -5px 9px #ffffff;
+  }
+
+  .select_form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+#character_sheet {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  height: 50vh;
+  border-radius: 50px;
+  background: #f8f6f6;
+  box-shadow:  20px 20px 60px #bebebe,
+              -20px -20px 60px #ffffff;
+ h3 {
+       text-align: center;
+      font-family: 'Montserrat', sans-serif;
+       font-weight: 600;
+     }
+.character_image {
+  display: flex;
+  align-items: center;
+  flex: 3 3 50%;//(flex-grow), a zsugorod (flex-shrink), (flex-basis)    
+  overflow: hidden;
+}
+.race_image, .class_image {
+  flex: 2 2 100%;
+    // flex-grow: 1; /* A flex-grow értékét növelve az elem több teret foglal el a rendelkezésre álló helyből */
+    // flex-basis: 50%;/* Az alapértelmezett méret felére csökkentése */
+    img {
+      margin: 0 15%;
+      width: 70%;
+      //width: fit-content;
+      height: auto;
+      border-radius: 10px;
+      background: #f8f6f6;
+      box-shadow:  8px 8px 16px #bcb9b9,
+                  -8px -8px 16px #fefbfb; 
+    }
+  }
+}
